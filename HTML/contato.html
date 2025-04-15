@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="icon" type="image/x-icon" href="/IMGs/imagem_2025-04-08_194321977.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="/JS/script.js" defer></script>
+</head>
+<body>
+
+    <!--Início menu moba-->
+    <div class="abrirmenu" id="btn_abrir"><span class="material-icons">menu</span></div>
+    <div class="menumoba" id="menumoba">
+        <div class="fechar"><span class="material-icons">close</span></div>
+    <nav>
+        <ul>
+        <li><a href="/index.html">Início</a></li>
+        <li><a href="historia.html">História</a></li>
+        <li><a href="caracteristicas.html">Características</a></li>
+        <li><a href="monumentos.html">Monumentos</a></li>
+        <li><a href="legado.html">Influência e Legado</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div class="overlay-menu" id="overlay-menu"></div>
+    <!--Fim menu moba-->
+
+    <nav id="menu">
+        <ul>
+            <a href="/index.html"><li>Início</li></a>
+            <a href="historia.html"><li>História</li></a>
+            <a href="caracteristicas.html"><li>Características</li></a>
+            <a href="monumentos.html"><li>Monumentos</li></a>
+            <a href="legado.html"><li>Influência e Legado</li></a>
+            <a href="galeria.html"><li>Galeria</li></a>
+        </ul>
+    </nav><br><br><br>
+    <h1>Prencha o campo para enviar uma mensagem</h1><br><br>
+
+
+    <form action="https://formsubmit.co/emailgenericao007@gmail.com" method="POST">
+        <label for="name">Digite seu nome: </label>
+        <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+        <br>
+        <label for="email">Digite e-mail: </label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        <br>
+        <label for="message">Digite sua mensagem aqui: </label>
+        <input type="text" type="text" name="message" id="message" placeholder="Escreva aqui sua mensagem" required></input>
+        <br>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/HTML/obrigado.html">
+        <input id="btn" type="submit" value="Enviar">
+
+
+    </form>
+</body>
+
+</html>

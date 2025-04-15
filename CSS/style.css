@@ -1,0 +1,210 @@
+/*Reset css global*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Background paginas*/
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('https://princehamletuwu.github.io/ArquiteturaGotica/IMGs/fundo.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    color: #333333;
+}
+/*Menu de nave PCs*/
+#menu ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #1A1A1A;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+#menu a:hover{
+    color: #d30f01;
+    background-color: #494848;
+    text-decoration: underline;
+}
+#menu li{
+    text-decoration: none;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-size: 25px;
+}
+/*Paragrafos e titulos*/
+h1, a{
+    text-decoration: none;
+    color: #D4AF37;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+h2, h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    color: #ffe48c;
+}
+p{
+    width: 600px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    color: #F8F8F8;
+    font-size: 18px;
+}
+/*IMGs*/
+#arcos_ogivais{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+#fotos{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+}
+/*Formulario contato*/
+form{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: 600px;
+    color: #D4AF37;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 5px 20px 10px black;
+    background-color: #1A1A1A;
+}
+input, textarea{
+    width: 500px;
+    display: flex;    
+}
+#btn{
+    width: 100px;
+}
+/*rodapé*/
+footer{
+    padding: 20px;
+    background-color: #1A1A1A ;
+    color: #ffe2a4;
+    text-align: center;
+    margin-top: 40px;
+}
+/*Menu Moba*/
+.abrirmenu, .material-icons{
+    color: #D4AF37;
+    font-family: 35px;
+}
+/*Responsividade*/
+.menumoba{
+    display: none;
+}
+.abrirmenu{
+    display: none;
+}
+@media (max-width: 1455px){
+    #menu ul{
+        height: 75px;
+    }
+    #menu li{
+        width: 160px;
+        margin: 5px;
+        font-size: 25px;
+    }
+}
+@media (max-width: 1150px){
+    #menu li{
+        width: 130px;
+    }
+}
+@media (max-width: 975px) {
+    #menu{
+        display: none;
+    }
+    .overlay-menu{
+        background-color: #0000008e;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 888;
+        display: none;
+    }
+    .abrirmenu{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+    .menumoba{
+        display: block;
+        position: fixed;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: 999;
+        background-color: rgb(0, 0, 0);
+        width: 0%;
+        overflow: hidden;
+        transition: .2s;
+    }
+    .menumoba.abrir-menu{
+        width: 60%;
+    }
+    .menumoba.abrir-menu ~ .overlay-menu{
+        display: block;
+    }
+    .menumoba nav ul{
+        text-align: right;
+        list-style: none;
+        text-transform: uppercase;
+    }
+    .menumoba nav ul li a{
+        color: white;
+        font-family: 'Georgia', serif;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 300px;
+        display: block;
+    }
+    .menumoba li{
+        padding: 20px;
+    }
+    .menumoba a:hover{
+        color: white;
+        text-decoration: underline;
+        background-color: #D4AF37;
+    }
+}
+@media (max-width: 615px){
+    p{
+        font-size: 15px;
+        width: 80%;
+    }
+    #fotos, img{
+        width: 80%;
+    }
+    h1, h2, h3{
+        margin: auto;
+        display: block;
+        text-align: center;
+        width: 80%;
+    }
+    form, input{
+        width: 80%;
+    }
+}
